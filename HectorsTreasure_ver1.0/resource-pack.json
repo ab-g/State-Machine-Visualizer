@@ -1,0 +1,22 @@
+{
+    "@class": "ResourcePack",
+    "stateMachines": {
+        "@class": "StdResourceMapStateMachine",
+        "map": [
+            {
+                "key": {
+                    "uuid": "F9D45397-3F05-4D2E-A558-1DE88E10C0EC"
+                },
+                "value": {
+                    "@class": "StateMachine",
+                    "id": {
+                        "uuid": "F9D45397-3F05-4D2E-A558-1DE88E10C0EC"
+                    }
+                }
+            }
+        ]
+    },
+    "defaultStateMachineId": {
+        "uuid": "F9D45397-3F05-4D2E-A558-1DE88E10C0EC"
+    }
+}

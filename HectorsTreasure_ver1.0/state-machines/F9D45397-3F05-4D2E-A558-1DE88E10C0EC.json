@@ -1,0 +1,4936 @@
+{
+    "@class": "StateMachine",
+    "id": {
+        "uuid": "F9D45397-3F05-4D2E-A558-1DE88E10C0EC"
+    },
+    "behavior": {
+        "@class": "StateMachineBehavior",
+        "defaultStateId": {
+            "uuid": "80C74AEF-B123-49FE-8F7F-F10CD2A274D8"
+        },
+        "transitions": [
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "80C74AEF-B123-49FE-8F7F-F10CD2A274D8"
+                },
+                "dest_id": {
+                    "uuid": "718181DC-F01F-49BF-83B6-DB61D0555AC4"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_SlidingState",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "80C74AEF-B123-49FE-8F7F-F10CD2A274D8"
+                },
+                "dest_id": {
+                    "uuid": "32A9E5F2-26CA-4236-9AE7-D3248E95FE56"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_AirMoveUp",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "80C74AEF-B123-49FE-8F7F-F10CD2A274D8"
+                },
+                "dest_id": {
+                    "uuid": "D0E675C4-5469-4D8E-B7E3-9953EA29F882"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_AirMoveUp",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "80C74AEF-B123-49FE-8F7F-F10CD2A274D8"
+                },
+                "dest_id": {
+                    "uuid": "9AD28BA3-E289-4884-BC47-800F63C8ADE4"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Left",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "80C74AEF-B123-49FE-8F7F-F10CD2A274D8"
+                },
+                "dest_id": {
+                    "uuid": "BE0461FA-3DEE-4E1C-9031-8D21B7A54C59"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Right",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "80C74AEF-B123-49FE-8F7F-F10CD2A274D8"
+                },
+                "dest_id": {
+                    "uuid": "9748C5E1-87CE-491E-B2C1-A2F5E1CE8A94"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_SlidingState",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Crouch",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "80C74AEF-B123-49FE-8F7F-F10CD2A274D8"
+                },
+                "dest_id": {
+                    "uuid": "40BD467E-661E-4748-84C7-782A00A1205A"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Right",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Crouch",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_SlopeInFront",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "80C74AEF-B123-49FE-8F7F-F10CD2A274D8"
+                },
+                "dest_id": {
+                    "uuid": "40BD467E-661E-4748-84C7-782A00A1205A"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Left",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Crouch",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_SlopeInFront",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "80C74AEF-B123-49FE-8F7F-F10CD2A274D8"
+                },
+                "dest_id": {
+                    "uuid": "E2B2C01B-E358-455A-89E3-B0F4610AAF4C"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_SlidingState",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Jump",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CanJump",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "80C74AEF-B123-49FE-8F7F-F10CD2A274D8"
+                },
+                "dest_id": {
+                    "uuid": "E2B2C01B-E358-455A-89E3-B0F4610AAF4C"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_SlidingState",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PR_SlideJumpIsActive",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Jump",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CanJump",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "80C74AEF-B123-49FE-8F7F-F10CD2A274D8"
+                },
+                "dest_id": {
+                    "uuid": "A30E559F-44DE-4548-9F16-DAAF0C9A9BE3"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Action",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_NearLadder",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "80C74AEF-B123-49FE-8F7F-F10CD2A274D8"
+                },
+                "dest_id": {
+                    "uuid": "E2B2C01B-E358-455A-89E3-B0F4610AAF4C"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Up",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_NearLadder",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineAtLadderTopTransitionTest",
+                            "isInvertedTest": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "80C74AEF-B123-49FE-8F7F-F10CD2A274D8"
+                },
+                "dest_id": {
+                    "uuid": "E2B2C01B-E358-455A-89E3-B0F4610AAF4C"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Down",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_NearLadder",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineAtLadderBottomTransitionTest",
+                            "isInvertedTest": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "40BD467E-661E-4748-84C7-782A00A1205A"
+                },
+                "dest_id": {
+                    "uuid": "718181DC-F01F-49BF-83B6-DB61D0555AC4"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_SlidingState",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "40BD467E-661E-4748-84C7-782A00A1205A"
+                },
+                "dest_id": {
+                    "uuid": "80C74AEF-B123-49FE-8F7F-F10CD2A274D8"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_SlopeInFront",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "40BD467E-661E-4748-84C7-782A00A1205A"
+                },
+                "dest_id": {
+                    "uuid": "F294FD08-8630-42DF-AA19-4111B7CF2E2F"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Right",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Crouch",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_SlopeInFront",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "40BD467E-661E-4748-84C7-782A00A1205A"
+                },
+                "dest_id": {
+                    "uuid": "F294FD08-8630-42DF-AA19-4111B7CF2E2F"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Left",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Crouch",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_SlopeInFront",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "40BD467E-661E-4748-84C7-782A00A1205A"
+                },
+                "dest_id": {
+                    "uuid": "80C74AEF-B123-49FE-8F7F-F10CD2A274D8"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Right",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "40BD467E-661E-4748-84C7-782A00A1205A"
+                },
+                "dest_id": {
+                    "uuid": "80C74AEF-B123-49FE-8F7F-F10CD2A274D8"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Left",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "40BD467E-661E-4748-84C7-782A00A1205A"
+                },
+                "dest_id": {
+                    "uuid": "E78282D1-257E-4D8B-8522-C36276638C6C"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_SlidingState",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Jump",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CanJump",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "40BD467E-661E-4748-84C7-782A00A1205A"
+                },
+                "dest_id": {
+                    "uuid": "E78282D1-257E-4D8B-8522-C36276638C6C"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_SlidingState",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PR_SlideJumpIsActive",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Jump",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CanJump",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "40BD467E-661E-4748-84C7-782A00A1205A"
+                },
+                "dest_id": {
+                    "uuid": "605CC628-021D-442C-B884-449A7FD30F3A"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Right",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "40BD467E-661E-4748-84C7-782A00A1205A"
+                },
+                "dest_id": {
+                    "uuid": "605CC628-021D-442C-B884-449A7FD30F3A"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Left",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "40BD467E-661E-4748-84C7-782A00A1205A"
+                },
+                "dest_id": {
+                    "uuid": "32A9E5F2-26CA-4236-9AE7-D3248E95FE56"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_AirMoveUp",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "40BD467E-661E-4748-84C7-782A00A1205A"
+                },
+                "dest_id": {
+                    "uuid": "D0E675C4-5469-4D8E-B7E3-9953EA29F882"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_AirMoveUp",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "40BD467E-661E-4748-84C7-782A00A1205A"
+                },
+                "dest_id": {
+                    "uuid": "80C74AEF-B123-49FE-8F7F-F10CD2A274D8"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_SlidingState",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Crouch",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "9AD28BA3-E289-4884-BC47-800F63C8ADE4"
+                },
+                "dest_id": {
+                    "uuid": "40BD467E-661E-4748-84C7-782A00A1205A"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Left",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineIsRunningTransitionTest",
+                            "running": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "9AD28BA3-E289-4884-BC47-800F63C8ADE4"
+                },
+                "dest_id": {
+                    "uuid": "80C74AEF-B123-49FE-8F7F-F10CD2A274D8"
+                },
+                "test": {
+                    "@class": "StateMachineIsRunningTransitionTest",
+                    "running": false
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "BE0461FA-3DEE-4E1C-9031-8D21B7A54C59"
+                },
+                "dest_id": {
+                    "uuid": "40BD467E-661E-4748-84C7-782A00A1205A"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Right",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineIsRunningTransitionTest",
+                            "running": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "BE0461FA-3DEE-4E1C-9031-8D21B7A54C59"
+                },
+                "dest_id": {
+                    "uuid": "80C74AEF-B123-49FE-8F7F-F10CD2A274D8"
+                },
+                "test": {
+                    "@class": "StateMachineIsRunningTransitionTest",
+                    "running": false
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "718181DC-F01F-49BF-83B6-DB61D0555AC4"
+                },
+                "dest_id": {
+                    "uuid": "F395CEE7-0ECA-4CF7-9F62-875410EA8E62"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Left",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_SlidingState",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "718181DC-F01F-49BF-83B6-DB61D0555AC4"
+                },
+                "dest_id": {
+                    "uuid": "324C7D2E-33AB-41D9-9B0F-FCB7FE84D323"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Right",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_SlidingState",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "718181DC-F01F-49BF-83B6-DB61D0555AC4"
+                },
+                "dest_id": {
+                    "uuid": "E78282D1-257E-4D8B-8522-C36276638C6C"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_SlidingState",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PR_SlideJumpIsActive",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Jump",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CanJump",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "718181DC-F01F-49BF-83B6-DB61D0555AC4"
+                },
+                "dest_id": {
+                    "uuid": "0BC73986-E36E-4FDA-8EB3-9D1C79766994"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_SlidingState",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Crouch",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Right",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "718181DC-F01F-49BF-83B6-DB61D0555AC4"
+                },
+                "dest_id": {
+                    "uuid": "0BC73986-E36E-4FDA-8EB3-9D1C79766994"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_SlidingState",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Crouch",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Left",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "718181DC-F01F-49BF-83B6-DB61D0555AC4"
+                },
+                "dest_id": {
+                    "uuid": "9C47C607-9694-4BA6-B1D6-42470B42C1B6"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_SlidingState",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Crouch",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "718181DC-F01F-49BF-83B6-DB61D0555AC4"
+                },
+                "dest_id": {
+                    "uuid": "40BD467E-661E-4748-84C7-782A00A1205A"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_SlidingState",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Right",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "718181DC-F01F-49BF-83B6-DB61D0555AC4"
+                },
+                "dest_id": {
+                    "uuid": "40BD467E-661E-4748-84C7-782A00A1205A"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_SlidingState",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Left",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "718181DC-F01F-49BF-83B6-DB61D0555AC4"
+                },
+                "dest_id": {
+                    "uuid": "80C74AEF-B123-49FE-8F7F-F10CD2A274D8"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_SlidingState",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "718181DC-F01F-49BF-83B6-DB61D0555AC4"
+                },
+                "dest_id": {
+                    "uuid": "D0E675C4-5469-4D8E-B7E3-9953EA29F882"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_SlidingState",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "F395CEE7-0ECA-4CF7-9F62-875410EA8E62"
+                },
+                "dest_id": {
+                    "uuid": "718181DC-F01F-49BF-83B6-DB61D0555AC4"
+                },
+                "test": {
+                    "@class": "StateMachineIsRunningTransitionTest",
+                    "running": false
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "324C7D2E-33AB-41D9-9B0F-FCB7FE84D323"
+                },
+                "dest_id": {
+                    "uuid": "718181DC-F01F-49BF-83B6-DB61D0555AC4"
+                },
+                "test": {
+                    "@class": "StateMachineIsRunningTransitionTest",
+                    "running": false
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "E78282D1-257E-4D8B-8522-C36276638C6C"
+                },
+                "dest_id": {
+                    "uuid": "FA8273DF-B54E-401B-B8BC-B56ABC0D3F01"
+                },
+                "test": {
+                    "@class": "StateMachineBoolPropertyTransitionTest",
+                    "propertyName": "PI_Landed",
+                    "comparator": "equal",
+                    "propertyValue": false
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "E2B2C01B-E358-455A-89E3-B0F4610AAF4C"
+                },
+                "dest_id": {
+                    "uuid": "32A9E5F2-26CA-4236-9AE7-D3248E95FE56"
+                },
+                "test": {
+                    "@class": "StateMachineBoolPropertyTransitionTest",
+                    "propertyName": "PI_Landed",
+                    "comparator": "equal",
+                    "propertyValue": false
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "D8A006F5-DFA4-437D-A354-9EAC796C72B5"
+                },
+                "dest_id": {
+                    "uuid": "80C74AEF-B123-49FE-8F7F-F10CD2A274D8"
+                },
+                "test": {
+                    "@class": "StateMachineFloatVarTransitionTest",
+                    "varName": "animation_playing",
+                    "comparator": "equal",
+                    "varValue": 0
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "D8A006F5-DFA4-437D-A354-9EAC796C72B5"
+                },
+                "dest_id": {
+                    "uuid": "D0E675C4-5469-4D8E-B7E3-9953EA29F882"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "32A9E5F2-26CA-4236-9AE7-D3248E95FE56"
+                },
+                "dest_id": {
+                    "uuid": "D8A006F5-DFA4-437D-A354-9EAC796C72B5"
+                },
+                "test": {
+                    "@class": "StateMachineBoolPropertyTransitionTest",
+                    "propertyName": "PI_Landed",
+                    "comparator": "equal",
+                    "propertyValue": true
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "32A9E5F2-26CA-4236-9AE7-D3248E95FE56"
+                },
+                "dest_id": {
+                    "uuid": "343FFF75-6A4A-44CD-9EC3-EA75FB80264F"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Jump",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_WallInFront",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "32A9E5F2-26CA-4236-9AE7-D3248E95FE56"
+                },
+                "dest_id": {
+                    "uuid": "6EB84083-DAE5-4BA9-8C67-EBBF6EE17173"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Left",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "32A9E5F2-26CA-4236-9AE7-D3248E95FE56"
+                },
+                "dest_id": {
+                    "uuid": "28E5BEA3-1090-4E18-89BB-C4044BFDC004"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Right",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "32A9E5F2-26CA-4236-9AE7-D3248E95FE56"
+                },
+                "dest_id": {
+                    "uuid": "FA8273DF-B54E-401B-B8BC-B56ABC0D3F01"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Right",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "32A9E5F2-26CA-4236-9AE7-D3248E95FE56"
+                },
+                "dest_id": {
+                    "uuid": "FA8273DF-B54E-401B-B8BC-B56ABC0D3F01"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Left",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "32A9E5F2-26CA-4236-9AE7-D3248E95FE56"
+                },
+                "dest_id": {
+                    "uuid": "B9B0EAAF-1890-4FC3-947A-A199AD8B576F"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PR_AirJumpIsActive",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Jump",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CanJumpAir",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "32A9E5F2-26CA-4236-9AE7-D3248E95FE56"
+                },
+                "dest_id": {
+                    "uuid": "A30E559F-44DE-4548-9F16-DAAF0C9A9BE3"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Action",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_NearLadder",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "32A9E5F2-26CA-4236-9AE7-D3248E95FE56"
+                },
+                "dest_id": {
+                    "uuid": "D0E675C4-5469-4D8E-B7E3-9953EA29F882"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_AirMoveUp",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "D0E675C4-5469-4D8E-B7E3-9953EA29F882"
+                },
+                "dest_id": {
+                    "uuid": "718181DC-F01F-49BF-83B6-DB61D0555AC4"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_SlidingState",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "D0E675C4-5469-4D8E-B7E3-9953EA29F882"
+                },
+                "dest_id": {
+                    "uuid": "D8A006F5-DFA4-437D-A354-9EAC796C72B5"
+                },
+                "test": {
+                    "@class": "StateMachineBoolPropertyTransitionTest",
+                    "propertyName": "PI_Landed",
+                    "comparator": "equal",
+                    "propertyValue": true
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "D0E675C4-5469-4D8E-B7E3-9953EA29F882"
+                },
+                "dest_id": {
+                    "uuid": "343FFF75-6A4A-44CD-9EC3-EA75FB80264F"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Jump",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_WallInFront",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "D0E675C4-5469-4D8E-B7E3-9953EA29F882"
+                },
+                "dest_id": {
+                    "uuid": "6EB84083-DAE5-4BA9-8C67-EBBF6EE17173"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Left",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "D0E675C4-5469-4D8E-B7E3-9953EA29F882"
+                },
+                "dest_id": {
+                    "uuid": "28E5BEA3-1090-4E18-89BB-C4044BFDC004"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Right",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "D0E675C4-5469-4D8E-B7E3-9953EA29F882"
+                },
+                "dest_id": {
+                    "uuid": "605CC628-021D-442C-B884-449A7FD30F3A"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Right",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "D0E675C4-5469-4D8E-B7E3-9953EA29F882"
+                },
+                "dest_id": {
+                    "uuid": "605CC628-021D-442C-B884-449A7FD30F3A"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Left",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "D0E675C4-5469-4D8E-B7E3-9953EA29F882"
+                },
+                "dest_id": {
+                    "uuid": "B9B0EAAF-1890-4FC3-947A-A199AD8B576F"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PR_AirJumpIsActive",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Jump",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CanJumpAir",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "D0E675C4-5469-4D8E-B7E3-9953EA29F882"
+                },
+                "dest_id": {
+                    "uuid": "A30E559F-44DE-4548-9F16-DAAF0C9A9BE3"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Action",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_NearLadder",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "D0E675C4-5469-4D8E-B7E3-9953EA29F882"
+                },
+                "dest_id": {
+                    "uuid": "32A9E5F2-26CA-4236-9AE7-D3248E95FE56"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_AirMoveUp",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "6EB84083-DAE5-4BA9-8C67-EBBF6EE17173"
+                },
+                "dest_id": {
+                    "uuid": "FA8273DF-B54E-401B-B8BC-B56ABC0D3F01"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineIsRunningTransitionTest",
+                            "running": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_AirMoveUp",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "6EB84083-DAE5-4BA9-8C67-EBBF6EE17173"
+                },
+                "dest_id": {
+                    "uuid": "605CC628-021D-442C-B884-449A7FD30F3A"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineIsRunningTransitionTest",
+                            "running": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_AirMoveUp",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "28E5BEA3-1090-4E18-89BB-C4044BFDC004"
+                },
+                "dest_id": {
+                    "uuid": "FA8273DF-B54E-401B-B8BC-B56ABC0D3F01"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineIsRunningTransitionTest",
+                            "running": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_AirMoveUp",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "28E5BEA3-1090-4E18-89BB-C4044BFDC004"
+                },
+                "dest_id": {
+                    "uuid": "605CC628-021D-442C-B884-449A7FD30F3A"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineIsRunningTransitionTest",
+                            "running": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_AirMoveUp",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "DC43BBB7-846B-4ACF-BD85-0AFC676B7F5E"
+                },
+                "dest_id": {
+                    "uuid": "40BD467E-661E-4748-84C7-782A00A1205A"
+                },
+                "test": {
+                    "@class": "StateMachineFloatVarTransitionTest",
+                    "varName": "animation_playing",
+                    "comparator": "equal",
+                    "varValue": 0
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "DC43BBB7-846B-4ACF-BD85-0AFC676B7F5E"
+                },
+                "dest_id": {
+                    "uuid": "605CC628-021D-442C-B884-449A7FD30F3A"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Right",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "DC43BBB7-846B-4ACF-BD85-0AFC676B7F5E"
+                },
+                "dest_id": {
+                    "uuid": "605CC628-021D-442C-B884-449A7FD30F3A"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Left",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "DC43BBB7-846B-4ACF-BD85-0AFC676B7F5E"
+                },
+                "dest_id": {
+                    "uuid": "D0E675C4-5469-4D8E-B7E3-9953EA29F882"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "FA8273DF-B54E-401B-B8BC-B56ABC0D3F01"
+                },
+                "dest_id": {
+                    "uuid": "DC43BBB7-846B-4ACF-BD85-0AFC676B7F5E"
+                },
+                "test": {
+                    "@class": "StateMachineBoolPropertyTransitionTest",
+                    "propertyName": "PI_Landed",
+                    "comparator": "equal",
+                    "propertyValue": true
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "FA8273DF-B54E-401B-B8BC-B56ABC0D3F01"
+                },
+                "dest_id": {
+                    "uuid": "605CC628-021D-442C-B884-449A7FD30F3A"
+                },
+                "test": {
+                    "@class": "StateMachineBoolPropertyTransitionTest",
+                    "propertyName": "PI_AirMoveUp",
+                    "comparator": "equal",
+                    "propertyValue": false
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "FA8273DF-B54E-401B-B8BC-B56ABC0D3F01"
+                },
+                "dest_id": {
+                    "uuid": "32A9E5F2-26CA-4236-9AE7-D3248E95FE56"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Right",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "FA8273DF-B54E-401B-B8BC-B56ABC0D3F01"
+                },
+                "dest_id": {
+                    "uuid": "32A9E5F2-26CA-4236-9AE7-D3248E95FE56"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Left",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "FA8273DF-B54E-401B-B8BC-B56ABC0D3F01"
+                },
+                "dest_id": {
+                    "uuid": "50A9988B-0295-4B5B-9B96-1A35BF5C7BDB"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Left",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_CanHangOnWall",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "FA8273DF-B54E-401B-B8BC-B56ABC0D3F01"
+                },
+                "dest_id": {
+                    "uuid": "50A9988B-0295-4B5B-9B96-1A35BF5C7BDB"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Right",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_CanHangOnWall",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "FA8273DF-B54E-401B-B8BC-B56ABC0D3F01"
+                },
+                "dest_id": {
+                    "uuid": "A30E559F-44DE-4548-9F16-DAAF0C9A9BE3"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Action",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_NearLadder",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "FA8273DF-B54E-401B-B8BC-B56ABC0D3F01"
+                },
+                "dest_id": {
+                    "uuid": "BDA0A102-47A7-404F-8480-3EA07A28F57F"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PR_AirJumpIsActive",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Jump",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CanJumpAir",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "605CC628-021D-442C-B884-449A7FD30F3A"
+                },
+                "dest_id": {
+                    "uuid": "718181DC-F01F-49BF-83B6-DB61D0555AC4"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_SlidingState",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "605CC628-021D-442C-B884-449A7FD30F3A"
+                },
+                "dest_id": {
+                    "uuid": "DC43BBB7-846B-4ACF-BD85-0AFC676B7F5E"
+                },
+                "test": {
+                    "@class": "StateMachineBoolPropertyTransitionTest",
+                    "propertyName": "PI_Landed",
+                    "comparator": "equal",
+                    "propertyValue": true
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "605CC628-021D-442C-B884-449A7FD30F3A"
+                },
+                "dest_id": {
+                    "uuid": "D0E675C4-5469-4D8E-B7E3-9953EA29F882"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Right",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "605CC628-021D-442C-B884-449A7FD30F3A"
+                },
+                "dest_id": {
+                    "uuid": "D0E675C4-5469-4D8E-B7E3-9953EA29F882"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Left",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "605CC628-021D-442C-B884-449A7FD30F3A"
+                },
+                "dest_id": {
+                    "uuid": "50A9988B-0295-4B5B-9B96-1A35BF5C7BDB"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Left",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_CanHangOnWall",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "605CC628-021D-442C-B884-449A7FD30F3A"
+                },
+                "dest_id": {
+                    "uuid": "50A9988B-0295-4B5B-9B96-1A35BF5C7BDB"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Right",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_CanHangOnWall",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "605CC628-021D-442C-B884-449A7FD30F3A"
+                },
+                "dest_id": {
+                    "uuid": "A30E559F-44DE-4548-9F16-DAAF0C9A9BE3"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Action",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_NearLadder",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "605CC628-021D-442C-B884-449A7FD30F3A"
+                },
+                "dest_id": {
+                    "uuid": "BDA0A102-47A7-404F-8480-3EA07A28F57F"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PR_AirJumpIsActive",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Jump",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CanJumpAir",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "BDA0A102-47A7-404F-8480-3EA07A28F57F"
+                },
+                "dest_id": {
+                    "uuid": "FA8273DF-B54E-401B-B8BC-B56ABC0D3F01"
+                },
+                "test": {}
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "B9B0EAAF-1890-4FC3-947A-A199AD8B576F"
+                },
+                "dest_id": {
+                    "uuid": "32A9E5F2-26CA-4236-9AE7-D3248E95FE56"
+                },
+                "test": {}
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "9748C5E1-87CE-491E-B2C1-A2F5E1CE8A94"
+                },
+                "dest_id": {
+                    "uuid": "9C47C607-9694-4BA6-B1D6-42470B42C1B6"
+                },
+                "test": {
+                    "@class": "StateMachineFloatVarTransitionTest",
+                    "varName": "animation_playing",
+                    "comparator": "equal",
+                    "varValue": 0
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "F294FD08-8630-42DF-AA19-4111B7CF2E2F"
+                },
+                "dest_id": {
+                    "uuid": "0BC73986-E36E-4FDA-8EB3-9D1C79766994"
+                },
+                "test": {
+                    "@class": "StateMachineFloatVarTransitionTest",
+                    "varName": "animation_playing",
+                    "comparator": "equal",
+                    "varValue": 0
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "9C47C607-9694-4BA6-B1D6-42470B42C1B6"
+                },
+                "dest_id": {
+                    "uuid": "718181DC-F01F-49BF-83B6-DB61D0555AC4"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_SlidingState",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "9C47C607-9694-4BA6-B1D6-42470B42C1B6"
+                },
+                "dest_id": {
+                    "uuid": "EC6BD6F3-8DD8-4C4B-A420-AB576435ECF9"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Left",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "9C47C607-9694-4BA6-B1D6-42470B42C1B6"
+                },
+                "dest_id": {
+                    "uuid": "A1FAB462-C071-4852-89CB-789482640CA7"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Right",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "9C47C607-9694-4BA6-B1D6-42470B42C1B6"
+                },
+                "dest_id": {
+                    "uuid": "D0E675C4-5469-4D8E-B7E3-9953EA29F882"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "9C47C607-9694-4BA6-B1D6-42470B42C1B6"
+                },
+                "dest_id": {
+                    "uuid": "C85F7F28-4A32-4BDA-A726-17B6D432E644"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Crouch",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineCanStandUpTransitionTest"
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "9C47C607-9694-4BA6-B1D6-42470B42C1B6"
+                },
+                "dest_id": {
+                    "uuid": "0BC73986-E36E-4FDA-8EB3-9D1C79766994"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Right",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "9C47C607-9694-4BA6-B1D6-42470B42C1B6"
+                },
+                "dest_id": {
+                    "uuid": "0BC73986-E36E-4FDA-8EB3-9D1C79766994"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Left",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "9C47C607-9694-4BA6-B1D6-42470B42C1B6"
+                },
+                "dest_id": {
+                    "uuid": "E2B2C01B-E358-455A-89E3-B0F4610AAF4C"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Crouch",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Jump",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CanJump",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineCanStandUpTransitionTest"
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "C85F7F28-4A32-4BDA-A726-17B6D432E644"
+                },
+                "dest_id": {
+                    "uuid": "80C74AEF-B123-49FE-8F7F-F10CD2A274D8"
+                },
+                "test": {
+                    "@class": "StateMachineFloatVarTransitionTest",
+                    "varName": "animation_playing",
+                    "comparator": "equal",
+                    "varValue": 0
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "701B4AD3-0CD1-41E0-80AF-B8C4D57CD447"
+                },
+                "dest_id": {
+                    "uuid": "40BD467E-661E-4748-84C7-782A00A1205A"
+                },
+                "test": {
+                    "@class": "StateMachineFloatVarTransitionTest",
+                    "varName": "animation_playing",
+                    "comparator": "equal",
+                    "varValue": 0
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "0BC73986-E36E-4FDA-8EB3-9D1C79766994"
+                },
+                "dest_id": {
+                    "uuid": "718181DC-F01F-49BF-83B6-DB61D0555AC4"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_SlidingState",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "0BC73986-E36E-4FDA-8EB3-9D1C79766994"
+                },
+                "dest_id": {
+                    "uuid": "701B4AD3-0CD1-41E0-80AF-B8C4D57CD447"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Right",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Crouch",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineCanStandUpTransitionTest"
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "0BC73986-E36E-4FDA-8EB3-9D1C79766994"
+                },
+                "dest_id": {
+                    "uuid": "701B4AD3-0CD1-41E0-80AF-B8C4D57CD447"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Left",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Crouch",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineCanStandUpTransitionTest"
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "0BC73986-E36E-4FDA-8EB3-9D1C79766994"
+                },
+                "dest_id": {
+                    "uuid": "9C47C607-9694-4BA6-B1D6-42470B42C1B6"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Right",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "0BC73986-E36E-4FDA-8EB3-9D1C79766994"
+                },
+                "dest_id": {
+                    "uuid": "9C47C607-9694-4BA6-B1D6-42470B42C1B6"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Left",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "0BC73986-E36E-4FDA-8EB3-9D1C79766994"
+                },
+                "dest_id": {
+                    "uuid": "9C47C607-9694-4BA6-B1D6-42470B42C1B6"
+                },
+                "test": {
+                    "@class": "StateMachineBoolPropertyTransitionTest",
+                    "propertyName": "PI_Landed",
+                    "comparator": "equal",
+                    "propertyValue": false
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "0BC73986-E36E-4FDA-8EB3-9D1C79766994"
+                },
+                "dest_id": {
+                    "uuid": "9C47C607-9694-4BA6-B1D6-42470B42C1B6"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Crouch",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineCanStandUpTransitionTest"
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "0BC73986-E36E-4FDA-8EB3-9D1C79766994"
+                },
+                "dest_id": {
+                    "uuid": "E78282D1-257E-4D8B-8522-C36276638C6C"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Crouch",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Jump",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CanJump",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineCanStandUpTransitionTest"
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "EC6BD6F3-8DD8-4C4B-A420-AB576435ECF9"
+                },
+                "dest_id": {
+                    "uuid": "0BC73986-E36E-4FDA-8EB3-9D1C79766994"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Left",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineIsRunningTransitionTest",
+                            "running": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "EC6BD6F3-8DD8-4C4B-A420-AB576435ECF9"
+                },
+                "dest_id": {
+                    "uuid": "9C47C607-9694-4BA6-B1D6-42470B42C1B6"
+                },
+                "test": {
+                    "@class": "StateMachineIsRunningTransitionTest",
+                    "running": false
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "A1FAB462-C071-4852-89CB-789482640CA7"
+                },
+                "dest_id": {
+                    "uuid": "0BC73986-E36E-4FDA-8EB3-9D1C79766994"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Right",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineIsRunningTransitionTest",
+                            "running": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "A1FAB462-C071-4852-89CB-789482640CA7"
+                },
+                "dest_id": {
+                    "uuid": "9C47C607-9694-4BA6-B1D6-42470B42C1B6"
+                },
+                "test": {
+                    "@class": "StateMachineIsRunningTransitionTest",
+                    "running": false
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "50A9988B-0295-4B5B-9B96-1A35BF5C7BDB"
+                },
+                "dest_id": {
+                    "uuid": "80C74AEF-B123-49FE-8F7F-F10CD2A274D8"
+                },
+                "test": {
+                    "@class": "StateMachineBoolPropertyTransitionTest",
+                    "propertyName": "PI_Landed",
+                    "comparator": "equal",
+                    "propertyValue": true
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "50A9988B-0295-4B5B-9B96-1A35BF5C7BDB"
+                },
+                "dest_id": {
+                    "uuid": "D0E675C4-5469-4D8E-B7E3-9953EA29F882"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Right",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "50A9988B-0295-4B5B-9B96-1A35BF5C7BDB"
+                },
+                "dest_id": {
+                    "uuid": "D0E675C4-5469-4D8E-B7E3-9953EA29F882"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Left",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "50A9988B-0295-4B5B-9B96-1A35BF5C7BDB"
+                },
+                "dest_id": {
+                    "uuid": "D0E675C4-5469-4D8E-B7E3-9953EA29F882"
+                },
+                "test": {
+                    "@class": "StateMachineBoolPropertyTransitionTest",
+                    "propertyName": "PI_CanHangOnWall",
+                    "comparator": "equal",
+                    "propertyValue": false
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "50A9988B-0295-4B5B-9B96-1A35BF5C7BDB"
+                },
+                "dest_id": {
+                    "uuid": "3A2D2443-3945-43E3-960A-024A1873FF22"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Left",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Jump",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_CanHangOnWall",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "50A9988B-0295-4B5B-9B96-1A35BF5C7BDB"
+                },
+                "dest_id": {
+                    "uuid": "3A2D2443-3945-43E3-960A-024A1873FF22"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Right",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Jump",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_CanHangOnWall",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "3A2D2443-3945-43E3-960A-024A1873FF22"
+                },
+                "dest_id": {
+                    "uuid": "32A9E5F2-26CA-4236-9AE7-D3248E95FE56"
+                },
+                "test": {
+                    "@class": "StateMachineBoolPropertyTransitionTest",
+                    "propertyName": "PI_WallInFront",
+                    "comparator": "equal",
+                    "propertyValue": false
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "3A2D2443-3945-43E3-960A-024A1873FF22"
+                },
+                "dest_id": {
+                    "uuid": "32A9E5F2-26CA-4236-9AE7-D3248E95FE56"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Left",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "3A2D2443-3945-43E3-960A-024A1873FF22"
+                },
+                "dest_id": {
+                    "uuid": "32A9E5F2-26CA-4236-9AE7-D3248E95FE56"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Right",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "3A2D2443-3945-43E3-960A-024A1873FF22"
+                },
+                "dest_id": {
+                    "uuid": "50A9988B-0295-4B5B-9B96-1A35BF5C7BDB"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Left",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_CanHangOnWall",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_AirMoveUp",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineLongPropertyTransitionTest",
+                            "propertyName": "CC_CurrentStateTime",
+                            "comparator": "more",
+                            "propertyValue": 200
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "3A2D2443-3945-43E3-960A-024A1873FF22"
+                },
+                "dest_id": {
+                    "uuid": "50A9988B-0295-4B5B-9B96-1A35BF5C7BDB"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Right",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "TurnedBack",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_CanHangOnWall",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_Landed",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "PI_AirMoveUp",
+                            "comparator": "equal",
+                            "propertyValue": false
+                        },
+                        {
+                            "@class": "StateMachineLongPropertyTransitionTest",
+                            "propertyName": "CC_CurrentStateTime",
+                            "comparator": "more",
+                            "propertyValue": 200
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "343FFF75-6A4A-44CD-9EC3-EA75FB80264F"
+                },
+                "dest_id": {
+                    "uuid": "0920839C-4480-4667-B111-3897A2F0301D"
+                },
+                "test": {
+                    "@class": "StateMachineFloatVarTransitionTest",
+                    "varName": "animation_playing",
+                    "comparator": "equal",
+                    "varValue": 0
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "0920839C-4480-4667-B111-3897A2F0301D"
+                },
+                "dest_id": {
+                    "uuid": "FA8273DF-B54E-401B-B8BC-B56ABC0D3F01"
+                },
+                "test": {}
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "A30E559F-44DE-4548-9F16-DAAF0C9A9BE3"
+                },
+                "dest_id": {
+                    "uuid": "CA9F844C-83A8-4B3F-9ECD-C622E166933B"
+                },
+                "test": {
+                    "@class": "StateMachineIsRunningTransitionTest",
+                    "running": false
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "CA9F844C-83A8-4B3F-9ECD-C622E166933B"
+                },
+                "dest_id": {
+                    "uuid": "428EBEF9-3EB8-4827-8D65-7AA43236739F"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineBoolPropertyTransitionTest",
+                            "propertyName": "CI_Action",
+                            "comparator": "equal",
+                            "propertyValue": true
+                        },
+                        {
+                            "@class": "StateMachineCanLadderReleaseTransitionTest"
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "CA9F844C-83A8-4B3F-9ECD-C622E166933B"
+                },
+                "dest_id": {
+                    "uuid": "E2BCD7E5-AF00-45F1-8FBE-06800BB14084"
+                },
+                "test": {
+                    "@class": "StateMachineBoolPropertyTransitionTest",
+                    "propertyName": "CI_Up",
+                    "comparator": "equal",
+                    "propertyValue": true
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "CA9F844C-83A8-4B3F-9ECD-C622E166933B"
+                },
+                "dest_id": {
+                    "uuid": "E2BCD7E5-AF00-45F1-8FBE-06800BB14084"
+                },
+                "test": {
+                    "@class": "StateMachineBoolPropertyTransitionTest",
+                    "propertyName": "CI_Down",
+                    "comparator": "equal",
+                    "propertyValue": true
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "428EBEF9-3EB8-4827-8D65-7AA43236739F"
+                },
+                "dest_id": {
+                    "uuid": "80C74AEF-B123-49FE-8F7F-F10CD2A274D8"
+                },
+                "test": {
+                    "@class": "StateMachineIsRunningTransitionTest",
+                    "running": false
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "E2BCD7E5-AF00-45F1-8FBE-06800BB14084"
+                },
+                "dest_id": {
+                    "uuid": "CA9F844C-83A8-4B3F-9ECD-C622E166933B"
+                },
+                "test": {
+                    "@class": "StateMachineBoolPropertyTransitionTest",
+                    "propertyName": "CI_Up",
+                    "comparator": "equal",
+                    "propertyValue": false
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "E2BCD7E5-AF00-45F1-8FBE-06800BB14084"
+                },
+                "dest_id": {
+                    "uuid": "2C5D25D5-AAAF-42E4-9DD1-5F6B3E5445E0"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineAtLadderTopTransitionTest",
+                            "isInvertedTest": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "8EDBF606-890B-4D05-A59F-1586553B85B1"
+                },
+                "dest_id": {
+                    "uuid": "CA9F844C-83A8-4B3F-9ECD-C622E166933B"
+                },
+                "test": {
+                    "@class": "StateMachineBoolPropertyTransitionTest",
+                    "propertyName": "CI_Down",
+                    "comparator": "equal",
+                    "propertyValue": false
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "8EDBF606-890B-4D05-A59F-1586553B85B1"
+                },
+                "dest_id": {
+                    "uuid": "2C5D25D5-AAAF-42E4-9DD1-5F6B3E5445E0"
+                },
+                "test": {
+                    "@class": "StateMachineTransitionTestContainer",
+                    "tests": [
+                        {
+                            "@class": "StateMachineAtLadderBottomTransitionTest",
+                            "isInvertedTest": false
+                        }
+                    ]
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "2C5D25D5-AAAF-42E4-9DD1-5F6B3E5445E0"
+                },
+                "dest_id": {
+                    "uuid": "80C74AEF-B123-49FE-8F7F-F10CD2A274D8"
+                },
+                "test": {
+                    "@class": "StateMachineIsRunningTransitionTest",
+                    "running": false
+                }
+            },
+            {
+                "@class": "StateMachineTransition",
+                "duration": 0,
+                "offset": 0,
+                "source_id": {
+                    "uuid": "99E9ABE6-E517-4610-B020-3D5BAA6748AF"
+                },
+                "dest_id": {
+                    "uuid": "80C74AEF-B123-49FE-8F7F-F10CD2A274D8"
+                },
+                "test": {
+                    "@class": "StateMachineIsRunningTransitionTest",
+                    "running": false
+                }
+            }
+        ]
+    },
+    "states": [
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineBoolPropertyAction",
+                    "propertyName": "CanAirJump",
+                    "propertyValue": true
+                },
+                {
+                    "@class": "StateMachineBoolPropertyAction",
+                    "propertyName": "CI_Jump",
+                    "propertyValue": false
+                },
+                {
+                    "@class": "StateMachineJumpWallForwardDelegatorAction"
+                }
+            ],
+            "displayName": "jumpWallForward",
+            "id": {
+                "uuid": "0920839C-4480-4667-B111-3897A2F0301D"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineVector3PropertyAction",
+                    "propertyName": "CM_MoveInputVector",
+                    "propertyValue": {
+                        "values": [
+                            1,
+                            0,
+                            0
+                        ]
+                    }
+                },
+                {
+                    "@class": "StateMachineMoveDelegatorAction",
+                    "isPassiveMode": false,
+                    "speedPropertyName": "crouchSpeed"
+                }
+            ],
+            "displayName": "crouchForward",
+            "id": {
+                "uuid": "0BC73986-E36E-4FDA-8EB3-9D1C79766994"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineTurnAroundDelegatorAction"
+                },
+                {
+                    "@class": "StateMachineBoolPropertyAction",
+                    "propertyName": "TurnedBack",
+                    "propertyValue": false
+                }
+            ],
+            "displayName": "turnAirRight",
+            "id": {
+                "uuid": "28E5BEA3-1090-4E18-89BB-C4044BFDC004"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineLadderReleaseTopDelegatorAction",
+                    "anchoringTimer": 0,
+                    "anchoringDuration": 0,
+                    "anchoringStartPosition": {
+                        "values": [
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "ladderTargetPosition": {
+                        "values": [
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "anchoringStartRotation": {
+                        "values": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ]
+                    },
+                    "ladderTargetRotation": {
+                        "values": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                },
+                {
+                    "@class": "StateMachineTimelineAction",
+                    "scriptName": "",
+                    "isLooped": false,
+                    "isContinueToEnd": false
+                }
+            ],
+            "displayName": "ladderReleaseTop",
+            "id": {
+                "uuid": "2C5D25D5-AAAF-42E4-9DD1-5F6B3E5445E0"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineTurnAroundDelegatorAction"
+                },
+                {
+                    "@class": "StateMachineBoolPropertyAction",
+                    "propertyName": "TurnedBack",
+                    "propertyValue": false
+                }
+            ],
+            "displayName": "turnRightSlide",
+            "id": {
+                "uuid": "324C7D2E-33AB-41D9-9B0F-FCB7FE84D323"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineVector3PropertyAction",
+                    "propertyName": "CM_MoveInputVector",
+                    "propertyValue": {
+                        "values": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                },
+                {
+                    "@class": "StateMachineMoveAirDelegatorAction"
+                }
+            ],
+            "displayName": "idleAirUp",
+            "id": {
+                "uuid": "32A9E5F2-26CA-4236-9AE7-D3248E95FE56"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineWallHangDelegatorAction"
+                }
+            ],
+            "displayName": "jumpWallForwardWait",
+            "id": {
+                "uuid": "343FFF75-6A4A-44CD-9EC3-EA75FB80264F"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineBoolPropertyAction",
+                    "propertyName": "CanAirJump",
+                    "propertyValue": true
+                },
+                {
+                    "@class": "StateMachineJumpWallDelegatorAction"
+                }
+            ],
+            "displayName": "jumpWall",
+            "id": {
+                "uuid": "3A2D2443-3945-43E3-960A-024A1873FF22"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineBoolPropertyAction",
+                    "propertyName": "CanJump",
+                    "propertyValue": true
+                },
+                {
+                    "@class": "StateMachineBoolPropertyAction",
+                    "propertyName": "CanJumpAir",
+                    "propertyValue": true
+                },
+                {
+                    "@class": "StateMachineVector3PropertyAction",
+                    "propertyName": "CM_MoveInputVector",
+                    "propertyValue": {
+                        "values": [
+                            1,
+                            0,
+                            0
+                        ]
+                    }
+                },
+                {
+                    "@class": "StateMachineMoveDelegatorAction",
+                    "isPassiveMode": false,
+                    "speedPropertyName": "maxStableMoveSpeed"
+                }
+            ],
+            "displayName": "walkForward",
+            "id": {
+                "uuid": "40BD467E-661E-4748-84C7-782A00A1205A"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineLadderReleaseDelegatorAction",
+                    "anchoringTimer": 0,
+                    "anchoringDuration": 0,
+                    "anchoringStartPosition": {
+                        "values": [
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "ladderTargetPosition": {
+                        "values": [
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "anchoringStartRotation": {
+                        "values": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ]
+                    },
+                    "ladderTargetRotation": {
+                        "values": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                },
+                {
+                    "@class": "StateMachineTimelineAction",
+                    "scriptName": "",
+                    "isLooped": false,
+                    "isContinueToEnd": false
+                }
+            ],
+            "displayName": "ladderRelease",
+            "id": {
+                "uuid": "428EBEF9-3EB8-4827-8D65-7AA43236739F"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineWallHangDelegatorAction"
+                }
+            ],
+            "displayName": "wallHang",
+            "id": {
+                "uuid": "50A9988B-0295-4B5B-9B96-1A35BF5C7BDB"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineVector3PropertyAction",
+                    "propertyName": "CM_MoveInputVector",
+                    "propertyValue": {
+                        "values": [
+                            1,
+                            0,
+                            0
+                        ]
+                    }
+                },
+                {
+                    "@class": "StateMachineMoveAirDelegatorAction"
+                }
+            ],
+            "displayName": "airWalkForwardDown",
+            "id": {
+                "uuid": "605CC628-021D-442C-B884-449A7FD30F3A"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineTurnAroundDelegatorAction"
+                },
+                {
+                    "@class": "StateMachineBoolPropertyAction",
+                    "propertyName": "TurnedBack",
+                    "propertyValue": true
+                },
+                {
+                    "@class": "StateMachineTimelineAction",
+                    "scriptName": "",
+                    "isLooped": true,
+                    "isContinueToEnd": false
+                }
+            ],
+            "displayName": "turnAirLeft",
+            "id": {
+                "uuid": "6EB84083-DAE5-4BA9-8C67-EBBF6EE17173"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineStandUpDelegatorAction"
+                }
+            ],
+            "displayName": "standUpForward",
+            "id": {
+                "uuid": "701B4AD3-0CD1-41E0-80AF-B8C4D57CD447"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineBoolPropertyAction",
+                    "propertyName": "CanJump",
+                    "propertyValue": true
+                },
+                {
+                    "@class": "StateMachineRotateOnSlidingWayDelegatorAction"
+                }
+            ],
+            "displayName": "slide",
+            "id": {
+                "uuid": "718181DC-F01F-49BF-83B6-DB61D0555AC4"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineVector3PropertyAction",
+                    "propertyName": "CM_MoveInputVector",
+                    "propertyValue": {
+                        "values": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                },
+                {
+                    "@class": "StateMachineBoolPropertyAction",
+                    "propertyName": "CanJump",
+                    "propertyValue": true
+                },
+                {
+                    "@class": "StateMachineBoolPropertyAction",
+                    "propertyName": "CanJumpAir",
+                    "propertyValue": true
+                },
+                {
+                    "@class": "StateMachineMoveDelegatorAction",
+                    "isPassiveMode": false,
+                    "speedPropertyName": "maxStableMoveSpeed"
+                }
+            ],
+            "displayName": "idle",
+            "id": {
+                "uuid": "80C74AEF-B123-49FE-8F7F-F10CD2A274D8"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineVector3PropertyAction",
+                    "propertyName": "CM_MoveInputVector",
+                    "propertyValue": {
+                        "values": [
+                            0,
+                            -1,
+                            0
+                        ]
+                    }
+                },
+                {
+                    "@class": "StateMachineLadderMoveDelegatorAction"
+                },
+                {
+                    "@class": "StateMachineTimelineAction",
+                    "scriptName": "",
+                    "isLooped": true,
+                    "isContinueToEnd": false
+                }
+            ],
+            "displayName": "ladderClimbingDown",
+            "id": {
+                "uuid": "8EDBF606-890B-4D05-A59F-1586553B85B1"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineSitDownDelegatorAction"
+                }
+            ],
+            "displayName": "sitDown",
+            "id": {
+                "uuid": "9748C5E1-87CE-491E-B2C1-A2F5E1CE8A94"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineLadderReleaseBottomDelegatorAction",
+                    "anchoringTimer": 0,
+                    "anchoringDuration": 0,
+                    "anchoringStartPosition": {
+                        "values": [
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "ladderTargetPosition": {
+                        "values": [
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "anchoringStartRotation": {
+                        "values": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ]
+                    },
+                    "ladderTargetRotation": {
+                        "values": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                },
+                {
+                    "@class": "StateMachineTimelineAction",
+                    "scriptName": "",
+                    "isLooped": false,
+                    "isContinueToEnd": false
+                }
+            ],
+            "displayName": "ladderReleaseBottom",
+            "id": {
+                "uuid": "99E9ABE6-E517-4610-B020-3D5BAA6748AF"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineTurnAroundDelegatorAction"
+                },
+                {
+                    "@class": "StateMachineBoolPropertyAction",
+                    "propertyName": "TurnedBack",
+                    "propertyValue": true
+                }
+            ],
+            "displayName": "turnLeft",
+            "id": {
+                "uuid": "9AD28BA3-E289-4884-BC47-800F63C8ADE4"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineVector3PropertyAction",
+                    "propertyName": "CM_MoveInputVector",
+                    "propertyValue": {
+                        "values": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                },
+                {
+                    "@class": "StateMachineMoveDelegatorAction",
+                    "isPassiveMode": false,
+                    "speedPropertyName": "crouchSpeed"
+                }
+            ],
+            "displayName": "idleCrouch",
+            "id": {
+                "uuid": "9C47C607-9694-4BA6-B1D6-42470B42C1B6"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineTurnAroundDelegatorAction"
+                },
+                {
+                    "@class": "StateMachineBoolPropertyAction",
+                    "propertyName": "TurnedBack",
+                    "propertyValue": false
+                }
+            ],
+            "displayName": "turnCrouchRight",
+            "id": {
+                "uuid": "A1FAB462-C071-4852-89CB-789482640CA7"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineLadderGrabDelegatorAction",
+                    "anchoringTimer": 0,
+                    "anchoringDuration": 0,
+                    "anchoringStartPosition": {
+                        "values": [
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "ladderTargetPosition": {
+                        "values": [
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "anchoringStartRotation": {
+                        "values": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ]
+                    },
+                    "ladderTargetRotation": {
+                        "values": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                },
+                {
+                    "@class": "StateMachineTimelineAction",
+                    "scriptName": "",
+                    "isLooped": false,
+                    "isContinueToEnd": false
+                }
+            ],
+            "displayName": "ladderGrab",
+            "id": {
+                "uuid": "A30E559F-44DE-4548-9F16-DAAF0C9A9BE3"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineBoolPropertyAction",
+                    "propertyName": "CI_Jump",
+                    "propertyValue": false
+                },
+                {
+                    "@class": "StateMachineBoolPropertyAction",
+                    "propertyName": "CanJumpAir",
+                    "propertyValue": false
+                },
+                {
+                    "@class": "StateMachineBoolPropertyAction",
+                    "propertyName": "CanJump",
+                    "propertyValue": false
+                },
+                {
+                    "@class": "StateMachineBoolPropertyAction",
+                    "propertyName": "CanWallJump",
+                    "propertyValue": false
+                },
+                {
+                    "@class": "StateMachineJumpAirDelegatorAction"
+                }
+            ],
+            "displayName": "jumpAir",
+            "id": {
+                "uuid": "B9B0EAAF-1890-4FC3-947A-A199AD8B576F"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineBoolPropertyAction",
+                    "propertyName": "CI_Jump",
+                    "propertyValue": false
+                },
+                {
+                    "@class": "StateMachineBoolPropertyAction",
+                    "propertyName": "CanJumpAir",
+                    "propertyValue": false
+                },
+                {
+                    "@class": "StateMachineBoolPropertyAction",
+                    "propertyName": "CanJump",
+                    "propertyValue": false
+                },
+                {
+                    "@class": "StateMachineBoolPropertyAction",
+                    "propertyName": "CanWallJump",
+                    "propertyValue": false
+                },
+                {
+                    "@class": "StateMachineJumpAirDelegatorAction"
+                }
+            ],
+            "displayName": "jumpAirForward",
+            "id": {
+                "uuid": "BDA0A102-47A7-404F-8480-3EA07A28F57F"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineTurnAroundDelegatorAction"
+                },
+                {
+                    "@class": "StateMachineBoolPropertyAction",
+                    "propertyName": "TurnedBack",
+                    "propertyValue": false
+                }
+            ],
+            "displayName": "turnRight",
+            "id": {
+                "uuid": "BE0461FA-3DEE-4E1C-9031-8D21B7A54C59"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineStandUpDelegatorAction"
+                }
+            ],
+            "displayName": "standUp",
+            "id": {
+                "uuid": "C85F7F28-4A32-4BDA-A726-17B6D432E644"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineVector3PropertyAction",
+                    "propertyName": "CM_MoveInputVector",
+                    "propertyValue": {
+                        "values": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                },
+                {
+                    "@class": "StateMachineLadderMoveDelegatorAction"
+                },
+                {
+                    "@class": "StateMachineTimelineAction",
+                    "scriptName": "",
+                    "isLooped": true,
+                    "isContinueToEnd": false
+                }
+            ],
+            "displayName": "ladderIdle",
+            "id": {
+                "uuid": "CA9F844C-83A8-4B3F-9ECD-C622E166933B"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineVector3PropertyAction",
+                    "propertyName": "CM_MoveInputVector",
+                    "propertyValue": {
+                        "values": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                },
+                {
+                    "@class": "StateMachineMoveAirDelegatorAction"
+                }
+            ],
+            "displayName": "idleAirDown",
+            "id": {
+                "uuid": "D0E675C4-5469-4D8E-B7E3-9953EA29F882"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineVector3PropertyAction",
+                    "propertyName": "CM_MoveInputVector",
+                    "propertyValue": {
+                        "values": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                },
+                {
+                    "@class": "StateMachineMoveDelegatorAction",
+                    "isPassiveMode": true,
+                    "speedPropertyName": "maxStableMoveSpeed"
+                }
+            ],
+            "displayName": "touchDown",
+            "id": {
+                "uuid": "D8A006F5-DFA4-437D-A354-9EAC796C72B5"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineVector3PropertyAction",
+                    "propertyName": "CM_MoveInputVector",
+                    "propertyValue": {
+                        "values": [
+                            1,
+                            0,
+                            0
+                        ]
+                    }
+                },
+                {
+                    "@class": "StateMachineMoveDelegatorAction",
+                    "isPassiveMode": true,
+                    "speedPropertyName": "maxStableMoveSpeed"
+                }
+            ],
+            "displayName": "touchDownForward",
+            "id": {
+                "uuid": "DC43BBB7-846B-4ACF-BD85-0AFC676B7F5E"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineBoolPropertyAction",
+                    "propertyName": "CanJumpAir",
+                    "propertyValue": true
+                },
+                {
+                    "@class": "StateMachineBoolPropertyAction",
+                    "propertyName": "CI_Jump",
+                    "propertyValue": false
+                },
+                {
+                    "@class": "StateMachineBoolPropertyAction",
+                    "propertyName": "CanJump",
+                    "propertyValue": false
+                },
+                {
+                    "@class": "StateMachineBoolPropertyAction",
+                    "propertyName": "CanWallJump",
+                    "propertyValue": false
+                },
+                {
+                    "@class": "StateMachineJumpDelegatorAction"
+                }
+            ],
+            "displayName": "jump",
+            "id": {
+                "uuid": "E2B2C01B-E358-455A-89E3-B0F4610AAF4C"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineVector3PropertyAction",
+                    "propertyName": "CM_MoveInputVector",
+                    "propertyValue": {
+                        "values": [
+                            0,
+                            1,
+                            0
+                        ]
+                    }
+                },
+                {
+                    "@class": "StateMachineLadderMoveDelegatorAction"
+                },
+                {
+                    "@class": "StateMachineTimelineAction",
+                    "scriptName": "",
+                    "isLooped": true,
+                    "isContinueToEnd": false
+                }
+            ],
+            "displayName": "ladderClimbingUp",
+            "id": {
+                "uuid": "E2BCD7E5-AF00-45F1-8FBE-06800BB14084"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineBoolPropertyAction",
+                    "propertyName": "CanJumpAir",
+                    "propertyValue": true
+                },
+                {
+                    "@class": "StateMachineBoolPropertyAction",
+                    "propertyName": "CI_Jump",
+                    "propertyValue": false
+                },
+                {
+                    "@class": "StateMachineBoolPropertyAction",
+                    "propertyName": "CanJump",
+                    "propertyValue": false
+                },
+                {
+                    "@class": "StateMachineBoolPropertyAction",
+                    "propertyName": "CanWallJump",
+                    "propertyValue": false
+                },
+                {
+                    "@class": "StateMachineJumpDelegatorAction"
+                }
+            ],
+            "displayName": "jumpForward",
+            "id": {
+                "uuid": "E78282D1-257E-4D8B-8522-C36276638C6C"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineTurnAroundDelegatorAction"
+                },
+                {
+                    "@class": "StateMachineBoolPropertyAction",
+                    "propertyName": "TurnedBack",
+                    "propertyValue": true
+                }
+            ],
+            "displayName": "turnCrouchLeft",
+            "id": {
+                "uuid": "EC6BD6F3-8DD8-4C4B-A420-AB576435ECF9"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineSitDownDelegatorAction"
+                },
+                {
+                    "@class": "StateMachineVector3PropertyAction",
+                    "propertyName": "CM_MoveInputVector",
+                    "propertyValue": {
+                        "values": [
+                            1,
+                            0,
+                            0
+                        ]
+                    }
+                },
+                {
+                    "@class": "StateMachineMoveDelegatorAction",
+                    "isPassiveMode": true,
+                    "speedPropertyName": "maxStableMoveSpeed"
+                }
+            ],
+            "displayName": "sitDownForward",
+            "id": {
+                "uuid": "F294FD08-8630-42DF-AA19-4111B7CF2E2F"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineTurnAroundDelegatorAction"
+                },
+                {
+                    "@class": "StateMachineBoolPropertyAction",
+                    "propertyName": "TurnedBack",
+                    "propertyValue": true
+                }
+            ],
+            "displayName": "turnLeftSlide",
+            "id": {
+                "uuid": "F395CEE7-0ECA-4CF7-9F62-875410EA8E62"
+            }
+        },
+        {
+            "@class": "StateMachineState",
+            "actions": [
+                {
+                    "@class": "StateMachineVector3PropertyAction",
+                    "propertyName": "CM_MoveInputVector",
+                    "propertyValue": {
+                        "values": [
+                            1,
+                            0,
+                            0
+                        ]
+                    }
+                },
+                {
+                    "@class": "StateMachineMoveAirDelegatorAction"
+                }
+            ],
+            "displayName": "airWalkForwardUp",
+            "id": {
+                "uuid": "FA8273DF-B54E-401B-B8BC-B56ABC0D3F01"
+            }
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+![dot](sm-dot.png)
