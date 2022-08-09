@@ -1,18 +1,7 @@
-import os
-import json
 import sys
 import subprocess
 import random
-
-
-def get_first_state_machine_id(resource_pack_data):
-    return resource_pack_data['stateMachines']['map'][0]['value']['id']['uuid']
-
-
-def get_state(state_machine_data, state_id):
-    for state_machine_state in state_machine_data['states']:
-        if state_machine_state['id']['uuid'] == state_id:
-            return state_machine_state
+from manu.fn import *
 
 
 def generate_colors(num_colors):
@@ -43,7 +32,7 @@ def main(game_project_dir_path, output_folder):
     with open(resource_pack_file_path, 'r') as resource_pack_file:
         resource_pack_data = json.load(resource_pack_file)
 
-    state_machine_id = get_first_state_machine_id(resource_pack_data)
+    state_machine_id = get_first_state_machine_id_from_resource_pack_data(resource_pack_data)
     state_machine_file_path = os.path.join(game_project_dir_path, 'state-machines/{0}.json'.format(state_machine_id))
 
     with open(state_machine_file_path, 'r') as state_machine_file:
@@ -113,8 +102,8 @@ def main(game_project_dir_path, output_folder):
     ];'''.format(state_machine_state['displayName'], node_label, state_colors[state_id]['in'])
 
         for transition in state_machine_data['behavior']['transitions']:
-            source_state = get_state(state_machine_data, transition['source_id']['uuid'])
-            destination_state = get_state(state_machine_data, transition['dest_id']['uuid'])
+            source_state = get_state_data_by_id_from_state_machine_data(state_machine_data, transition['source_id']['uuid'])
+            destination_state = get_state_data_by_id_from_state_machine_data(state_machine_data, transition['dest_id']['uuid'])
 
             edge_label = ''
             if len(transition['test']) == 0:
